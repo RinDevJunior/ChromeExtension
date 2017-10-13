@@ -1,0 +1,39 @@
+{
+  "name": "Extension create by Rin",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "xxx",
+  "homepage_url": "http://extensionizr.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  // "chrome_url_overrides": {
+  //   "newtab": "src/override/override.html"
+  // },
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "contentSettings",
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "src/background/background.js"
+    ],
+    "persistent": true
+  }//,
+  // "content_scripts": [
+  //   {
+  //     "matches": [
+  //       "https://www.google.com.vn/*"
+  //     ],
+  //     "js": [
+  //       "src/inject/inject.js"
+  //     ]
+  //   }
+  // ]
+}
